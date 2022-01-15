@@ -54,7 +54,7 @@ A simple TODO list with an account to save your tasks. This project is study ori
 
 :heavy_check_mark: Create User;\
 :heavy_check_mark: Authenticate User;\
-:heavy_check_mark: Create, Update, Delete tasks;
+:heavy_check_mark: Create, Update, Delete tasks;\
 :heavy_check_mark: Search Tasks;
 
 ## :rocket: Technologies ##
