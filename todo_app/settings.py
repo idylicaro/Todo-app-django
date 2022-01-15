@@ -34,12 +34,12 @@ ALLOWED_HOSTS = ['*']
 # Make CSRF cookie HttpOnly, see documentation for more details:
 # https://docs.djangoproject.com/en/1.11/ref/settings/#csrf-cookie-httponly
 CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SECURE = ENABLE_HTTPS
+CSRF_COOKIE_SECURE = True
 # Store CSRF token in session (since Django 1.11)
 CSRF_USE_SESSIONS = True
-SESSION_COOKIE_SECURE = ENABLE_HTTPS
+SESSION_COOKIE_SECURE = True
 # SSL redirect
-SECURE_SSL_REDIRECT = ENABLE_HTTPS
+SECURE_SSL_REDIRECT = True
 # Session cookie age (in seconds)
 SESSION_COOKIE_AGE = 1209600
 CORS_ORIGIN_ALLOW_ALL = True
