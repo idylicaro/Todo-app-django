@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +12,29 @@
     <title>To Do App</title>
 
     <style>
-        a{
+        a {
             text-decoration: none;
             font-weight: 600;
         }
-        body{
+
+        body {
             background-color: #121212;
             font-family: 'Nunito', sans-serif;
             padding-top: 50px;
         }
-        h1, h2, h3, h4, h5 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             font-family: 'Raleway', sans-serif;
             color: rgba(255, 255, 255, 0.87);
         }
 
-        a, p, li {
+        a,
+        p,
+        li {
             color: rgba(255, 255, 255, 0.6);
         }
 
@@ -34,7 +43,7 @@
             border: none;
         }
 
-        .container{
+        .container {
             max-width: 600px;
             margin: auto;
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), #121212;
@@ -69,6 +78,7 @@
         .header-bar h3 {
             color: rgba(255, 255, 255, 0.6);
         }
+
         .task-wrapper {
             display: flex;
             align-items: center;
@@ -127,13 +137,20 @@
             text-shadow: 1px 1px #3700B3;
         }
 
+        .empty-alert-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+
         input[type=text],
         input[type=password],
         textarea {
-            border: 1px solid #757575;
+            border: 1px solid rgba(0, 0, 0, .5);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), #121212;
             border-radius: 5px;
             padding: 10px;
             width: 90%;
+            color: rgba(255, 255, 255, 0.87);
         }
 
         label {
@@ -145,15 +162,14 @@
             font-weight: 300;
             opacity: 0.5;
         }
-
-        
-
     </style>
 </head>
+
 <body>
     <div class="container">
         {% block content %}
         {% endblock content %}
     </div>
 </body>
+
 </html>
