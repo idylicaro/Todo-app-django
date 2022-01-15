@@ -33,15 +33,10 @@ ALLOWED_HOSTS = ['*']
 
 # Make CSRF cookie HttpOnly, see documentation for more details:
 # https://docs.djangoproject.com/en/1.11/ref/settings/#csrf-cookie-httponly
-CSRF_COOKIE_HTTPONLY = True
 CSRF_COOKIE_SECURE = True
-# Store CSRF token in session (since Django 1.11)
-CSRF_USE_SESSIONS = True
-SESSION_COOKIE_SECURE = True
-# Session cookie age (in seconds)
-SESSION_COOKIE_AGE = 1209600
+
 CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = ['https://todo2-project.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://todo2-project.herokuapp.com']
 
 # Application definition
 
