@@ -11,6 +11,10 @@
     <title>To Do App</title>
 
     <style>
+        a{
+            text-decoration: none;
+            font-weight: 600;
+        }
         body{
             background-color: #121212;
             font-family: 'Nunito', sans-serif;
@@ -21,9 +25,15 @@
             color: rgba(255, 255, 255, 0.87);
         }
 
-        a, p {
+        a, p, li {
             color: rgba(255, 255, 255, 0.6);
         }
+
+        input {
+            outline: none;
+            border: none;
+        }
+
         .container{
             max-width: 600px;
             margin: auto;
@@ -31,19 +41,112 @@
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
         }
 
+        .card-body {
+            padding: 20px;
+        }
+
+        .button {
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), #121212;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+            color: rgba(255, 255, 255, 0.87);
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
         .header-bar {
             display: flex;
             justify-content: space-between;
             padding: 10px;
             border-radius: 5px 5px 0 0;
+            color: rgba(255, 255, 255, 0.87);
             background: linear-gradient(90deg, #5600E8 0%, #3700B3 30%, #30009C 60%, #23036A 100%);
         }
-        .header-bar h1 {
-            color: #000000;
-        }
+
         .header-bar h3 {
-            color: rgba(0, 0, 0, 0.74);
+            color: rgba(255, 255, 255, 0.6);
         }
+        .task-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)), #121212;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+            border-top: 1px solid #121212;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .task-title {
+            display: flex;
+            padding: 20px;
+        }
+
+        .task-title a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.87);
+            margin-left: 10px;
+        }
+
+        .task-complete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgba(105, 192, 105);
+            border-radius: 50%;
+        }
+
+        .task-incomplete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(218, 218, 218);
+            border-radius: 50%;
+        }
+
+        .delete-link {
+            text-decoration: none;
+            font-weight: 900;
+            color: #B00020;
+            font-size: 42px;
+            line-height: 0;
+        }
+
+        #search-add-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #add-link {
+            color: #BB86FC;
+            text-decoration: none;
+            font-size: 42px;
+            text-shadow: 1px 1px #3700B3;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid #757575;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        ::placeholder {
+            font-weight: 300;
+            opacity: 0.5;
+        }
+
+        
 
     </style>
 </head>
